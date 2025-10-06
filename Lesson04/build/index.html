@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acme Rockets - sjtroxel04</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -24,6 +25,18 @@
                 </nav>
             </div>
         </section>
+       <section id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
+        <button class="text-8xl self-end px-6">
+            &times;
+        </button>
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+            <a href="#hero" class="w-full text-center py-6 hover:opacity-90">Home</a>
+            <a href="#rockets" class="w-full text-center py-6 hover:opacity-90">Our Rockets</a>
+            <a href="#testimonials" class="w-full text-center py-6 hover:opacity-90">Testimonials</a>
+            <a href="#contact" class="w-full text-center py-6 hover:opacity-90">Contact Us</a>
+            <a href="#footer" class="w-full text-center py-6 hover:opacity-90">Legal</a>
+        </nav>
+       </section>
     </header>
     <main class="max-w-4xl mx-auto">
         <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
